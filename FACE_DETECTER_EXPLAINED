@@ -1,0 +1,25 @@
+How computer knows the face and how it understands that it actually a person's face and not other thing
+
+# Face Detection:
+
+What is "Haar Cascade"? - haarcascade_frontalface_default.xml
+
+    = It is an algorithm, like a machine learning thing that makes images pass trough and
+    It looks at every every size of the image and it passes each of those squares through this machine learning
+    thing, then it cascades down eventually >>> close enough to a face to be considered a face
+    haar = name of the person who created this algorithm
+    cascade = like a chain of events
+
+
+Haar Features (aka rudimentary building blocks) = all little blocks = shows the relationship of the white portion
+from the black portion, which allows us to approximate the relationship of the faces within this box.
+
+    a) edge features
+    b) line features
+    c) four-rectangle features
+
+If we chain these featues over and over again enough, then their combination will give a template for a face. So, it
+will look like a face. So, they find faces by laying the above box features over and over again and cascading over and
+over again all the way down these different layers, and then finding the one that actually matches the face.
+
+ = we give faces, it finds out combination of box features above
